@@ -1,5 +1,7 @@
 {
   "name": "picpay",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
