@@ -1,0 +1,15 @@
+ion-card {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  ion-card-content {
+    ion-item ion-label {
+      display: contents;
+      ion-icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}

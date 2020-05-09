@@ -1,0 +1,30 @@
+<ion-card *ngFor="let a of [1,2,3,4,5,6]">
+  <ion-card-header>
+    <ion-item mode="ios" lines="none">
+      <ion-avatar ion-item slot="start">
+        <img
+          src="https://avatars3.githubusercontent.com/u/19806594?s=400&u=2131e63805c7895508e2cb202d83993d98604df9&v=4"
+          alt="">
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">@pequeno.jonas pagou um boleto</ion-label>
+      <!-- <ion-button fill="outline" slot="end">View</ion-button> -->
+    </ion-item>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item mode="ios" lines="none">
+      <ion-label slot="start">
+        <ion-icon size="small" slot="start" name="people-outline"></ion-icon>2 horas atrás
+      </ion-label>
+      <ion-label slot="end">
+        <ion-item lines="none">
+          <ion-icon size="small" name="heart-outline"></ion-icon>
+          <ion-label>30</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon size="small" name="chatbox-outline"></ion-icon>
+          <ion-label>40</ion-label>
+        </ion-item>
+      </ion-label>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
