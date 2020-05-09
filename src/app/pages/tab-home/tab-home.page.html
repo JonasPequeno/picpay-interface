@@ -1,0 +1,60 @@
+<ion-content padding>
+  <div class="headersugestions">
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button color="warning" value="sugestions">
+        <ion-label>Sugestões</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        <ion-label>Favoritos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled>
+        <ion-label></ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled>
+        <ion-label></ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-grid>
+      <ion-row *ngIf="this.isSugestion">
+        <ion-col size="12">
+          <ion-segment scrollable>
+            <ion-segment-button *ngFor="let item of [1,2,3,4,5,6]">
+              <div class="sugestion">
+                <img src="../../../assets/shapes.svg" alt="">
+                <span class="block">Pagar Conta</span>
+              </div>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="this.isFavorite">
+        <ion-col size="12">
+          <ion-segment scrollable>
+            <ion-segment-button *ngFor="let item of [1,2,3,4]">
+              <div class="sugestion">
+                <img src="../../../assets/shapes.svg" alt="">
+                <span class="block">Conta</span>
+              </div>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-segment>
+    <ion-segment-button disabled>
+      <ion-label>Atividades</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sugestions">
+      <ion-label>Todos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favorites">
+      <ion-label>Minhas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <app-card-activity></app-card-activity>
+</ion-content>

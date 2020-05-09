@@ -1,0 +1,45 @@
+ion-content {
+  --background: #ededed;
+}
+
+.headersugestions {
+  background-color: var(--ion-color-primary);
+  height: 30%;
+
+  ion-segment-button {
+    --color-checked: white;
+    padding-bottom: 2px;
+  }
+
+  ion-label {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+ion-grid {
+  margin-top: 20px;
+}
+
+.sugestion {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4%;
+  --color-checked: white;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  span {
+    font-size: 9px;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+ion-segment ion-segment-button ion-label {
+  font-weight: bold;
+}
