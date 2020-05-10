@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabCarteiraPage implements OnInit {
 
+  public toggleActivity: boolean = true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cambio() {
+    console.log('enfou asndsn')
+    this.toggleActivity = !this.toggleActivity;
   }
 
 }
