@@ -18,9 +18,7 @@ export class HomePage implements OnInit {
   }
 
   openTabs() {
-    console.log('ansdklanskldn');
-
-    this.navController.navigateRoot('/tabs');
+    this.navController.navigateRoot('/tabs/tab-home');
   }
 
 }

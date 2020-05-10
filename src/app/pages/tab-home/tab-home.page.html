@@ -1,3 +1,29 @@
+<ion-header translucent>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon name="qr-code-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      <div>
+        <span class="labelSaldo">Meu saldo</span> <br>
+        <span class="saldo">R$ 15.000</span>
+      </div>
+    </ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon name="gift-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="reader-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content padding>
   <div class="headersugestions">
     <ion-segment (ionChange)="segmentChanged($event)">
