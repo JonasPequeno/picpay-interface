@@ -10,18 +10,56 @@
     <p>Seu saldo está redendo 100% do CDI</p>
 
     <div class="buttons">
-
       <ion-button mode="ios" color="light" shape="round" fill="outline">
         <ion-icon slot="start" name="wallet-outline"> </ion-icon> Adicionar
       </ion-button>
       <ion-button mode="ios" color="light" shape="round" fill="outline">
         <ion-icon slot="start" name="cash-outline"></ion-icon> Retirar
       </ion-button>
+      <br>
     </div>
 
-    <ion-item lines="none">
-      <ion-label>Usar saldo ao pagar</ion-label>
-      <ion-toggle slot="end" [ngModel]="toggleActivity" (ionChange)="cambio()"></ion-toggle>
-    </ion-item>
+    <div class="bodyCards">
+      <ion-item lines="full">
+        <ion-label>Usar saldo ao pagar</ion-label>
+        <ion-toggle slot="end" [ngModel]="toggleActivity" (ionChange)="cambio()"></ion-toggle>
+      </ion-item>
+      <ion-card>
+        <ion-item lines="none">
+          <ion-icon name="card" slot="start"></ion-icon>
+          <ion-label>
+            <p class="cardName">
+              Master
+            </p>
+            <p>
+              <ion-label>Cartão com o final 1234</ion-label>
+            </p>
+          </ion-label>
+          <ion-icon size="small" color="primary" name="checkmark-outline"></ion-icon>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item lines="none">
+          <ion-icon color="primary" name="add-circle-outline" slot="start"></ion-icon>
+          <ion-label color="primary">
+            <p>
+              Adicionar Cartão de crédito
+            </p>
+            <p>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+
+      <ion-list>
+        <ion-item detail="false" class="ion-text-center" lines="none">
+          <ion-label color="primary" class="itemPromo">
+            <ion-icon color="primary" size="small" slot="" name="barcode-outline"></ion-icon> Usar codigo promocional
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+    </div>
   </div>
 </ion-content>
